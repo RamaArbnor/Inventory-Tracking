@@ -19,7 +19,8 @@ db.serialize(() => {
       item_id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
       description TEXT,
-      total_quantity INTEGER NOT NULL
+      total_quantity INTEGER NOT NULL,
+      present_quantity INTEGER NOT NULL DEFAULT 0
     )
   `);
 
